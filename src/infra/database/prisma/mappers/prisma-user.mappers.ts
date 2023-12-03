@@ -20,7 +20,7 @@ export class PrismaUserMapper {
     return new User({
       user_id: user.id,
       name: user.name,
-      orders: user.orders.map((order) => PrismaOrderMapper.toDomain(order)),
+      orders: user.orders?.map((order) => PrismaOrderMapper.toDomain(order)),
     });
   }
 }
