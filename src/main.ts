@@ -15,6 +15,8 @@ async function bootstrap() {
     ),
   );
 
+  app.enableShutdownHooks();
+
   app.useGlobalPipes(new ValidationPipe({transform: true}));
 
   await app.listen(3000);
