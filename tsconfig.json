@@ -20,7 +20,8 @@
     "paths": {
       "@domain/*":["./src/domain/*"],
       "@infra/*":["./src/infra/*"],
-      "@useCases/*":["./src/use-cases/*"]
+      "@useCases/*":["./src/use-cases/*"],
+      "@helpers/*":["./src/helpers/*"]
     }
   }
 }
