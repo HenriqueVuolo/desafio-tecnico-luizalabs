@@ -146,7 +146,7 @@ describe('PrismaUserRepository', () => {
       const result = await prismaUserRepository.findMany({});
 
       expect(result).toBeDefined();
-      expect(result.length).toBe(0);
+      expect(result).toHaveLength(0);
       expect(prismaService.user.findMany).toHaveBeenCalled();
     });
   });

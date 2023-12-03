@@ -119,7 +119,7 @@ describe('PrismaOrderRepository', () => {
       const result = await prismaOrderRepository.findMany({});
 
       expect(result).toBeDefined();
-      expect(result.length).toBe(0);
+      expect(result).toHaveLength(0);
       expect(prismaService.order.findMany).toHaveBeenCalled();
     });
   });
