@@ -6,6 +6,7 @@ import {FilesController} from './controllers/files.controller';
 import {CreateUser} from '@useCases/user/create-user';
 import {CreateOrder} from '@useCases/order/create-order';
 import {FindUser} from '@useCases/user/find-user';
+import {FindUsers} from '@useCases/user/find-users';
 
 @Module({
   imports: [],
@@ -15,6 +16,7 @@ import {FindUser} from '@useCases/user/find-user';
     CreateManyUsers,
     CreateUser,
     FindUser,
+    FindUsers,
     CreateManyOrders,
     CreateOrder,
   ],
