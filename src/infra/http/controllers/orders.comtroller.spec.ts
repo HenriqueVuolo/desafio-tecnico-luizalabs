@@ -20,7 +20,7 @@ const ordersMock: Order[] = [
   }),
 ];
 
-describe('OrderController', () => {
+describe('OrdersController', () => {
   let ordersController: OrdersController;
   let findOrder: FindOrder;
   let findOrders: FindOrders;
@@ -80,7 +80,7 @@ describe('OrderController', () => {
   });
 
   describe('findOne', () => {
-    it('should return an array of orders', async () => {
+    it('should return an order', async () => {
       jest.spyOn(findOrder, 'execute').mockResolvedValue(ordersMock[0]);
 
       await ordersController.findById({order_id: 1});
