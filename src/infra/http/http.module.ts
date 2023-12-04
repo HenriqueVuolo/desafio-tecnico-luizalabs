@@ -9,10 +9,11 @@ import {FindUser} from '@useCases/user/find-user';
 import {FindUsers} from '@useCases/user/find-users';
 import {FindOrder} from '@useCases/order/find-order';
 import {FindOrders} from '@useCases/order/find-orders';
+import {OrdersController} from './controllers/order.controller';
 
 @Module({
   imports: [],
-  controllers: [FilesController],
+  controllers: [FilesController, OrdersController],
   providers: [
     ProcessFile,
     CreateManyUsers,
