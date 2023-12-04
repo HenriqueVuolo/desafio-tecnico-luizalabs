@@ -4,10 +4,17 @@ import {CreateManyOrders} from '@useCases/order/create-many-orders';
 import {CreateManyUsers} from '@useCases/user/create-many-users';
 import {FilesController} from './controllers/files.controller';
 import {CreateUser} from '@useCases/user/create-user';
+import {CreateOrder} from '@useCases/order/create-order';
 
 @Module({
   imports: [],
   controllers: [FilesController],
-  providers: [ProcessFile, CreateManyUsers, CreateUser, CreateManyOrders],
+  providers: [
+    ProcessFile,
+    CreateManyUsers,
+    CreateUser,
+    CreateManyOrders,
+    CreateOrder,
+  ],
 })
 export class HttpModule {}
