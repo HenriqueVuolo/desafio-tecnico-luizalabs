@@ -11,9 +11,10 @@ import {FindOrder} from '@useCases/order/find-order';
 import {FindOrders} from '@useCases/order/find-orders';
 import {OrdersController} from './controllers/orders.controller';
 import {UsersController} from './controllers/users.controller';
+import {DatabaseModule} from '@infra/database/database.module';
 
 @Module({
-  imports: [],
+  imports: [DatabaseModule],
   controllers: [FilesController, OrdersController, UsersController],
   providers: [
     ProcessFile,
