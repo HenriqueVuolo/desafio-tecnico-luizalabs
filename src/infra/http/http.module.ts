@@ -8,6 +8,7 @@ import {CreateOrder} from '@useCases/order/create-order';
 import {FindUser} from '@useCases/user/find-user';
 import {FindUsers} from '@useCases/user/find-users';
 import {FindOrder} from '@useCases/order/find-order';
+import {FindOrders} from '@useCases/order/find-orders';
 
 @Module({
   imports: [],
@@ -21,6 +22,7 @@ import {FindOrder} from '@useCases/order/find-order';
     CreateManyOrders,
     CreateOrder,
     FindOrder,
+    FindOrders,
   ],
 })
 export class HttpModule {}
