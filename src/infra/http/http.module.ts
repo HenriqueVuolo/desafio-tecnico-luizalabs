@@ -9,7 +9,7 @@ import {FindUser} from '@useCases/user/find-user';
 import {FindUsers} from '@useCases/user/find-users';
 import {FindOrder} from '@useCases/order/find-order';
 import {FindOrders} from '@useCases/order/find-orders';
-import {OrdersController} from './controllers/order.controller';
+import {OrdersController} from './controllers/orders.controller';
 
 @Module({
   imports: [],
