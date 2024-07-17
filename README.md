@@ -63,7 +63,7 @@ A classe entidade `User` possui os atributos `user_id`, `name` e `orders`. E a c
 
 ### Arquitetura
 
-Desenvolvi esse projeto tentando aplicar alguns conceitos de **Clean Architecture**, separando as funcionalidades em camadas de acordo com a sua responsabilidade e isolando as regras de negócio, reduzindo o aclopamento entre os componentes do sistema. O **NestJS** auxiliou bastante nisso com sua estrutura de módulos e o suporte a injeção de dependências.
+Desenvolvi esse projeto tentando aplicar alguns conceitos de **Clean Architecture**, separando as funcionalidades em camadas de acordo com a sua responsabilidade e isolando as regras de negócio, reduzindo o acoplamento entre os componentes do sistema. O **NestJS** auxiliou bastante nisso com sua estrutura de módulos e o suporte a injeção de dependências.
 
 O fluxo da aplicação segue da seguinte maneira: uma requisição é recebida pelo controlador (*controller*), que, por sua vez, invoca o caso de uso correspondente. O caso de uso interage com a camada de persistência através da implementação do repositório associado à entidade, gerando uma resposta que retorna ao controlador.
 
