@@ -78,7 +78,7 @@ Voltando ao desenvolvimento da solução, outra questão que surgiu foi que, com
 
 Uma possível solução seria manter os *Ids* do sistema legado como um campo comum e, durante o cadastro, gerar um *UUID* para cada novo registro. Dado o contexto de um teste técnico, decidi buscar uma solução mais simples. Além disso, como a saída de dados já possuia um formato específicado, isso poderia gerar problemas na avaliação. Portanto, optei por preservar a estrutura existente.
 
-A abordagem que adotei foi criar um método foi criação de um método que deve ser chamado ao gerar um novo registro com *id* predefinido. Esse método tem a função de pegar esse último *id* salvo e ajustar a variável do **PostgreSQL** responsável por registrar o próximo *id autoincrement*.
+A abordagem que adotei foi a criação de um método que deve ser chamado ao gerar um novo registro com *id* predefinido. Esse método tem a função de pegar esse último *id* salvo e ajustar a variável do **PostgreSQL** responsável por registrar o próximo *id autoincrement*.
 
 
 ## Funcionalidades
